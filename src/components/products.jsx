@@ -1,0 +1,119 @@
+import React from "react";
+
+const Products = ({isRu}) => {
+
+    const imageLink = 'https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__340.jpg';
+
+  return (
+    <div className="portfolio section-padding" id='products'>
+        <div className="container-fluid">
+            <div className="row">
+            <div className="col-lg-12 section-title text-center">
+                <h3>{isRu ? "Продукты":"Products"}</h3>
+                <p>{isRu ? "Всё что вам нужно!":"Anything you need!"}</p>
+                <span className="section-title-line"></span> </div>
+            {/* <div className="filtering text-center mb-30">
+                <button type="button" data-filter='*' className="active">All</button>
+                <button type="button" data-filter='.summer'>Summer</button>
+                <button type="button" data-filter='.winter'>Winter</button>
+                <button type="button" data-filter='.rainy'>Rainy</button>
+                <button type="button" data-filter='.spring'>Spring</button>
+            </div> */}
+            <div className="gallery no-padding row">
+                <div className="col-lg-4 col-sm-6 spring no-padding">
+                <div className="item-img"> 
+                    <div className="part-img"> <img src={imageLink} alt="image" />
+                    <div className="overlay-img">
+                        <h4>Spring</h4>
+                        <h6>Autumn Leaves</h6>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div className="col-lg-4 col-sm-6 spring no-padding">
+                <div className="item-img"> 
+                    <div className="part-img"> <img src={imageLink} alt="image" />
+                    <div className="overlay-img">
+                        <h4>Spring</h4>
+                        <h6>Flower Pot</h6>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div className="col-lg-4 col-sm-6 spring no-padding">
+                <div className="item-img"> 
+                    <div className="part-img"> <img src={imageLink} alt="image" />
+                    <div className="overlay-img">
+                        <h4>Spring</h4>
+                        <h6>Bird with Flower</h6>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div className="col-lg-4 col-sm-6 summer no-padding">
+                <div className="item-img"> 
+                    <div className="part-img"> <img src={imageLink} alt="image" />
+                    <div className="overlay-img">
+                        <h4>Summer</h4>
+                        <h6>Vacation Trip Van</h6>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div className="col-lg-4 col-sm-6 winter no-padding">
+                <div className="item-img"> 
+                    <div className="part-img"> <img src={imageLink} alt="image" />
+                    <div className="overlay-img">
+                        <h4>Winter</h4>
+                        <h6>Girl in the snow</h6>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div className="col-lg-4 col-sm-6 rainy no-padding">
+                <div className="item-img"> 
+                    <div className="part-img"> <img src={imageLink} alt="image" />
+                    <div className="overlay-img">
+                        <h4>Rainy</h4>
+                        <h6>Man with an Umberalla</h6>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div className="col-lg-4 col-sm-6 summer no-padding">
+                <div className="item-img"> 
+                    <div className="part-img"> <img src={imageLink} alt="image" />
+                    <div className="overlay-img">
+                        <h4>Summer</h4>
+                        <h6>New Beginning</h6>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div className="col-lg-4 col-sm-6 rainy no-padding">
+                <div className="item-img"> 
+                    <div className="part-img"> <img src={imageLink} alt="image" />
+                    <div className="overlay-img">
+                        <h4>Rainy</h4>
+                        <h6>Girl in the Rain</h6>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div className="col-lg-4 col-sm-6 summer no-padding">
+                <div className="item-img"> 
+                    <div className="part-img"> <img src={imageLink} alt="image" />
+                    <div className="overlay-img">
+                        <h4>Summer</h4>
+                        <h6>Fun at the Seashores</h6>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+  );
+};
+export default Products;
