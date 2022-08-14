@@ -73,7 +73,7 @@ const MainPage = ({allLangs, lang, setLang,isRu}) => {
           <a href="#" className="anchor-btn">Learn more <i className="fas fa-arrow-right pd-lt-10"></i></a> </div>
       </div>
       <div className="col-md-6 mb-50">
-        <div className="section-img"> <img src={imageLink} alt="" className="img-responsive"/> </div>
+        <div className="section-img"> <img src={require('../images/productus/apples.jpg')} alt="" className="img-responsive"/> </div>
       </div>
     </div>
   </div>
