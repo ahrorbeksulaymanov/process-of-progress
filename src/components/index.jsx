@@ -10,7 +10,7 @@ import { FaBars } from "react-icons/fa";
 import logo from "../images/process-logo_mini.png";
 
 const MainPage = ({ allLangs, lang, setLang, isRu }) => {
-  
+
   const scrollPosition = useScrollTop();
 
   const selectLang = (e) => {
@@ -98,7 +98,7 @@ const MainPage = ({ allLangs, lang, setLang, isRu }) => {
                   {isRu ? "Продукты" : "Products"}
                 </a>{" "}
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 {" "}
                 <a
                   className="nav-link"
@@ -110,7 +110,7 @@ const MainPage = ({ allLangs, lang, setLang, isRu }) => {
                 >
                   {isRu ? "Новости" : "News"}
                 </a>{" "}
-              </li>
+              </li> */}
               <li className="nav-item">
                 {" "}
                 <a
@@ -206,7 +206,7 @@ const MainPage = ({ allLangs, lang, setLang, isRu }) => {
 
       <Products isRu={isRu} />
 
-      <News isRu={isRu} />
+      {/* <News isRu={isRu} /> */}
 
       <div className="testimonials">
         <div className="testimonials-overlay section-padding">
