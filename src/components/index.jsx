@@ -10,8 +10,7 @@ import { FaBars } from "react-icons/fa";
 import logo from "../images/process-logo_mini.png";
 
 const MainPage = ({ allLangs, lang, setLang, isRu }) => {
-  const imageLink =
-    "https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__340.jpg";
+  
   const scrollPosition = useScrollTop();
 
   const selectLang = (e) => {
@@ -190,9 +189,6 @@ const MainPage = ({ allLangs, lang, setLang, isRu }) => {
                     Maecenas eget dui a neque rutrum tincidunt sed non ipsum.
                   </p>
                 </div>
-                <a href="#" className="anchor-btn">
-                  Learn more <i className="fas fa-arrow-right pd-lt-10"></i>
-                </a>{" "}
               </div>
             </div>
             <div className="col-md-6 mb-50">
@@ -201,7 +197,6 @@ const MainPage = ({ allLangs, lang, setLang, isRu }) => {
                 <img
                   src={require("../images/productus/apples.jpg")}
                   alt=""
-                  className="img-responsive"
                 />{" "}
               </div>
             </div>
@@ -322,7 +317,7 @@ const MainPage = ({ allLangs, lang, setLang, isRu }) => {
           <div className="row">
             <div className="col-md-12">
               <p>
-                2022 &copy; PROCESS. Website Designed by{" "}
+                {new Date().getFullYear()} &copy; PROCESS. Website Designed by{" "}
                 <a
                   href="http://t.me/sulaymanov_a"
                   target="_blank"
