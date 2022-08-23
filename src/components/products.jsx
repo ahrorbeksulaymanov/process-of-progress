@@ -6,22 +6,15 @@ const Products = ({isRu}) => {
     const imageLink = 'https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__340.jpg';
 
     return (
-        <div className="portfolio section-padding" id='products'>
+        <div className="portfolio section-padding" style={{background:"#f0f0f0"}} id='products'>
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-12 section-title text-center">
                         <h3>{isRu ? "Продукты" : "Products"}</h3>
                         <p>{isRu ? "Всё что вам нужно!" : "Anything you need!"}</p>
                         <span className="section-title-line"></span></div>
-                    {/* <div className="filtering text-center mb-30">
-                <button type="button" data-filter='*' className="active">All</button>
-                <button type="button" data-filter='.summer'>Summer</button>
-                <button type="button" data-filter='.winter'>Winter</button>
-                <button type="button" data-filter='.rainy'>Rainy</button>
-                <button type="button" data-filter='.spring'>Spring</button>
-            </div> */}
                     <div className="gallery no-padding row">
-                        <div className="col-lg-4 col-sm-6 spring no-padding">
+                        <div className="col-lg-4 border-radius-custom col-sm-6 spring no-padding">
                             <div className="item-img">
                                 <div className="part-img"><img className="product-image" src={require('../images/productus/abricos.png')}
                                                                alt="image"/>
@@ -32,7 +25,7 @@ const Products = ({isRu}) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-sm-6 spring no-padding">
+                        <div className="col-lg-4 border-radius-custom col-sm-6 spring no-padding">
                             <div className="item-img">
                                 <div className="part-img"><img className="product-image" src={require('../images/productus/uzum.jpg')}
                                                                alt="image"/>
@@ -43,7 +36,7 @@ const Products = ({isRu}) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-sm-6 spring no-padding">
+                        <div className="col-lg-4 border-radius-custom col-sm-6 spring no-padding">
                             <div className="item-img">
                                 <div className="part-img"><img className="product-image" src={require('../images/productus/shaftoli.png')}
                                                                alt="image"/>
@@ -54,7 +47,7 @@ const Products = ({isRu}) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-sm-6 summer no-padding">
+                        <div className="col-lg-4 border-radius-custom col-sm-6 summer no-padding">
                             <div className="item-img">
                                 <div className="part-img"><img className="product-image" src={require('../images/productus/df-mix-2.png')}
                                                                alt="image"/>
@@ -65,7 +58,7 @@ const Products = ({isRu}) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-sm-6 winter no-padding">
+                        <div className="col-lg-4 border-radius-custom col-sm-6 winter no-padding">
                             <div className="item-img">
                                 <div className="part-img"><img className="product-image" src={require('../images/productus/df-uzum.jpg')}
                                                                alt="image"/>
@@ -76,7 +69,7 @@ const Products = ({isRu}) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-sm-6 rainy no-padding">
+                        <div className="col-lg-4 border-radius-custom col-sm-6 rainy no-padding">
                             <div className="item-img">
                                 <div className="part-img"><img className="product-image" src={require('../images/productus/df-abricos.jpeg')}
                                                                alt="image"/>
@@ -87,7 +80,7 @@ const Products = ({isRu}) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-sm-6 summer no-padding">
+                        <div className="col-lg-4 border-radius-custom col-sm-6 summer no-padding">
                             <div className="item-img">
                                 <div className="part-img"><img className="product-image" src={require('../images/productus/nuts-mix.jpg')}
                                                                alt="image"/>
@@ -98,7 +91,7 @@ const Products = ({isRu}) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-sm-6 rainy no-padding">
+                        <div className="col-lg-4 border-radius-custom col-sm-6 rainy no-padding">
                             <div className="item-img">
                                 <div className="part-img"><img className="product-image" src={require('../images/productus/nut.jpg')}
                                                                alt="image"/>
@@ -109,7 +102,7 @@ const Products = ({isRu}) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-sm-6 summer no-padding">
+                        <div className="col-lg-4 border-radius-custom col-sm-6 summer no-padding">
                             <div className="item-img">
                                 <div className="part-img"><img className="product-image" src={require('../images/productus/pista.jpeg')}
                                                                alt="image"/>
@@ -120,7 +113,7 @@ const Products = ({isRu}) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-sm-6 summer no-padding">
+                        <div className="col-lg-4 border-radius-custom col-sm-6 summer no-padding">
                             <div className="item-img">
                                 <div className="part-img"><img className="product-image" src={require('../images/productus/bulgor-1.png')}
                                                                alt="image"/>
@@ -131,7 +124,7 @@ const Products = ({isRu}) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-sm-6 rainy no-padding">
+                        <div className="col-lg-4 border-radius-custom col-sm-6 rainy no-padding">
                             <div className="item-img">
                                 <div className="part-img"><img className="product-image" src={require('../images/productus/bodring.jpg')}
                                                                alt="image"/>
@@ -142,7 +135,7 @@ const Products = ({isRu}) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-sm-6 summer no-padding">
+                        <div className="col-lg-4 border-radius-custom col-sm-6 summer no-padding">
                             <div className="item-img">
                                 <div className="part-img"><img className="product-image" src={require('../images/productus/tamato.jpg')}
                                                                alt="image"/>
@@ -154,7 +147,7 @@ const Products = ({isRu}) => {
                             </div>
                         </div>
 
-                        <div className="col-lg-4 col-sm-6 summer no-padding">
+                        <div className="col-lg-4 border-radius-custom col-sm-6 summer no-padding">
                             <div className="item-img">
                                 <div className="part-img"><img className="product-image" src={require('../images/productus/bean-mix.jpg')}
                                                                alt="image"/>
@@ -165,7 +158,7 @@ const Products = ({isRu}) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-sm-6 rainy no-padding">
+                        <div className="col-lg-4 border-radius-custom col-sm-6 rainy no-padding">
                             <div className="item-img">
                                 <div className="part-img"><img className="product-image" src={require('../images/productus/black-e-bean.jpg')}
                                                                alt="image"/>
@@ -176,7 +169,7 @@ const Products = ({isRu}) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-sm-6 summer no-padding">
+                        <div className="col-lg-4 border-radius-custom col-sm-6 summer no-padding">
                             <div className="item-img">
                                 <div className="part-img"><img className="product-image" src={require('../images/productus/beans-mix-2.jpg')}
                                                                alt="image"/>

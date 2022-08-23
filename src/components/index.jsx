@@ -1,158 +1,19 @@
 import React from "react";
 import "swiper/css";
-import useScrollTop from "../customHooks/useScroll";
 import MainSlider from "./mainSlider";
 import News from "./news";
 import Products from "./products";
 import MySlider from "./slider";
 import ToTop from "./toTop";
-import { FaBars } from "react-icons/fa";
-import logo from "../images/process-logo_mini.png";
+import MyForm from "./form";
+import MyHeader from "./header";
+import { FaTelegramPlane, FaInstagram, FaFacebookF } from "react-icons/fa";
 
 const MainPage = ({ allLangs, lang, setLang, isRu }) => {
 
-  const scrollPosition = useScrollTop();
-
-  const selectLang = (e) => {
-    setLang(e);
-    localStorage.setItem("lang", e);
-  };
-
   return (
     <>
-      <nav
-        className="navbar navbar-expand-lg"
-        style={
-          scrollPosition > 50
-            ? { background: "#fff", boxShadow: "0 0 5px #999" }
-            : { background: "transparent" }
-        }
-      >
-        <div className="container">
-          {" "}
-          <a className="navbar-brand navbar-logo" href="#">
-            <img
-              src={logo}
-              style={{ width: "150px" }}
-              alt="logo"
-              className="logo-1"
-            />
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <FaBars
-              style={
-                scrollPosition > 50 ? { color: "#000" } : { color: "#fff" }
-              }
-            />
-          </button>
-          <div
-            className="collapse navbar-collapse"
-            style={scrollPosition > 50 ? { color: "#000" } : { color: "#fff" }}
-            id="navbarSupportedContent"
-          >
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                {" "}
-                <a
-                  className="nav-link"
-                  style={
-                    scrollPosition > 50 ? { color: "#000" } : { color: "#fff" }
-                  }
-                  href="#"
-                  data-scroll-nav="0"
-                >
-                  {isRu ? "Главный" : "Home"}
-                </a>{" "}
-              </li>
-              <li className="nav-item">
-                {" "}
-                <a
-                  className="nav-link"
-                  style={
-                    scrollPosition > 50 ? { color: "#000" } : { color: "#fff" }
-                  }
-                  href="#about"
-                  data-scroll-nav="1"
-                >
-                  {isRu ? "О нас" : "About us"}
-                </a>{" "}
-              </li>
-              <li className="nav-item">
-                {" "}
-                <a
-                  className="nav-link"
-                  style={
-                    scrollPosition > 50 ? { color: "#000" } : { color: "#fff" }
-                  }
-                  href="#products"
-                  data-scroll-nav="2"
-                >
-                  {isRu ? "Продукты" : "Products"}
-                </a>{" "}
-              </li>
-              {/* <li className="nav-item">
-                {" "}
-                <a
-                  className="nav-link"
-                  style={
-                    scrollPosition > 50 ? { color: "#000" } : { color: "#fff" }
-                  }
-                  href="#news"
-                  data-scroll-nav="3"
-                >
-                  {isRu ? "Новости" : "News"}
-                </a>{" "}
-              </li> */}
-              <li className="nav-item">
-                {" "}
-                <a
-                  className="nav-link"
-                  style={
-                    scrollPosition > 50 ? { color: "#000" } : { color: "#fff" }
-                  }
-                  href="#contact"
-                  data-scroll-nav="4"
-                >
-                  {isRu ? "Контакт" : "Contact"}
-                </a>{" "}
-              </li>
-              <li className="nav-item">
-                <div class="form-group lang-select">
-                  <select
-                    value={lang}
-                    onChange={(e) => selectLang(e.target.value)}
-                    class="form-control mt-1"
-                    style={
-                      scrollPosition > 50
-                        ? { background: "#fff", color: "#000" }
-                        : { background: "transparent", color: "#fff" }
-                    }
-                    id="exampleSelect"
-                  >
-                    {allLangs.map((item, index) => (
-                      <option
-                        key={index}
-                        value={item.key}
-                        style={{ color: "#000" }}
-                      >
-                        {item.title}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <MyHeader allLangs={allLangs} lang={lang} setLang={setLang} isRu={isRu} />
 
       <div className="banner text-center" data-scroll-index="0">
         <MainSlider isRu={isRu} />
@@ -208,7 +69,7 @@ const MainPage = ({ allLangs, lang, setLang, isRu }) => {
 
       {/* <News isRu={isRu} /> */}
 
-      <div className="testimonials">
+      {/* <div className="testimonials">
         <div className="testimonials-overlay section-padding">
           <div className="container">
             <div className="row">
@@ -220,15 +81,25 @@ const MainPage = ({ allLangs, lang, setLang, isRu }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="contact section-padding" id="contact">
         <div className="container">
           <div className="row">
             <div className="col-md-12 section-title text-center">
-              <h3>{isRu ? "Свяжитесь с нами!" : "Contact us!"}</h3>
-              {/* <p>Vestibulum elementum dui tempus dolor gravida, vel mattis erat fermentum.</p> */}
+              <h3>{isRu ? "Связаться!" : "Get in touch!"}</h3>
+              <p>{isRu ? "Хотите узнать больше о наших услугах или хотите стать нашим клиентом? Свяжитесь с нами, мы будем рады помочь!"
+               : "Want to know more about our services, or do you want to become a customer? Get in touch with us, we're happy to help!"}</p>
               <span className="section-title-line"></span>{" "}
+            </div>
+            <div className="col-md-12 mb-5">
+              <iframe
+                style={{ width: "100%", height: "400px", border: "0" }}
+                src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d4588.604992758378!2d69.24821636255184!3d41.310980245326235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x38ae8b0543e466e3%3A0xd38c6d4363440967!2sUzbekistan%20Ave%2C%20Tashkent%2C%20Uzbekistan!3m2!1d41.3102984!2d69.25078289999999!5e0!3m2!1sen!2s!4v1660471551519!5m2!1sen!2s"
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade" 
+              ></iframe>
             </div>
             <div className="col-md-4">
               <div className="part-info">
@@ -260,54 +131,14 @@ const MainPage = ({ allLangs, lang, setLang, isRu }) => {
                   <div className="content">
                     <h4>{isRu ? "Почта" : "Mail"} :</h4>
                     <p>
-                      <a href="#">info@123.com</a>
+                      <a href="mailto:husanht@gmail.com">husanht@gmail.com</a>
                     </p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="col-md-8">
-              <iframe
-                style={{ width: "100%", height: "400px", border: "0" }}
-                src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d4588.604992758378!2d69.24821636255184!3d41.310980245326235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x38ae8b0543e466e3%3A0xd38c6d4363440967!2sUzbekistan%20Ave%2C%20Tashkent%2C%20Uzbekistan!3m2!1d41.3102984!2d69.25078289999999!5e0!3m2!1sen!2s!4v1660471551519!5m2!1sen!2s"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-              {/* <div className="contact-form">
-          <form className='form' id='contact-form' action="mailto:ahrorsulaymanov2@gmail.com?subject=myform_submission" enctype="text/plain" method='post' data-toggle='validator'>
-            <input type='hidden' name='form-name' value='contact-form' />
-            <div className="messages"></div>
-            <div className="controls">
-              <div className="row">
-                <div className="col-lg-6">
-                  <div className="form-group">
-                    <input id="form_name" type="text" name="name" placeholder={isRu ? "Имя *" : "Name *"} required data-error="name is required." />
-                    <div className="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div className="col-lg-6">
-                  <div className="form-group">
-                    <input id="form_email" type="email" name="email" placeholder={isRu ? "Почта *" : "Mail *"} required data-error="Valid email is required." />
-                    <div className="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div className="col-lg-12">
-                  <div className="form-group">
-                    <input id="form_subject" type="text" name="subject" placeholder={isRu ? "Предмет" : "Subject"} />
-                  </div>
-                </div>
-                <div className="col-lg-12 form-group">
-                  <textarea id="form_message" name="message" className="form-control" placeholder={isRu ? "Введите ваше сообщение" : "Type Your Message"} rows="4" required data-error="Please,leave us a message."></textarea>
-                  <div className="help-block with-errors"></div>
-                </div>
-                <div className="col-lg-12 text-center">
-                  <button type="submit" className="bttn">{isRu ? "Отправить" : "Send Message"}</button>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div> */}
+              <MyForm isru={isRu} />
             </div>
           </div>
         </div>
@@ -315,8 +146,19 @@ const MainPage = ({ allLangs, lang, setLang, isRu }) => {
       <footer className="footer-copy">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-12">
-              <p>
+            <div className="col-sm-6">
+              <span>
+                <FaTelegramPlane />
+              </span>
+              <span>
+                <FaInstagram />
+              </span>
+              <span>
+                <FaFacebookF />
+              </span>
+            </div>
+            <div className="col-sm-6">
+              <p className="mb-0 mt-2">
                 {new Date().getFullYear()} &copy; PROCESS. Website Designed by{" "}
                 <a
                   href="http://t.me/sulaymanov_a"
