@@ -30,10 +30,6 @@ const MainPage = ({allLangs, lang, setLang, isRu}) => {
                                 }
 
                             </h3>
-                            <p>
-                                Suspendisse fringilla eget arcu et bibendum. Vestibulum
-                                elementum dui tempus dolor gravida, vel mattis erat fermentum.
-                            </p>
                             <span className="section-title-line"></span>{" "}
                         </div>
                         <div className="col-md-6 mb-50">
@@ -114,8 +110,8 @@ const MainPage = ({allLangs, lang, setLang, isRu}) => {
                     <div className="row">
                         <div className="col-md-12 section-title text-center">
                             <h3>{isRu ? "Связаться!" : "Get in touch!"}</h3>
-                            <p>{isRu ? "Хотите узнать больше о наших услугах или хотите стать нашим клиентом? Свяжитесь с нами, мы будем рады помочь!"
-                                : "Want to know more about our services, or do you want to become a customer? Get in touch with us, we're happy to help!"}</p>
+                            <p>{isRu ? "Хотите узнать больше о наших услугах или стать нашим клиентом? Свяжитесь с нами, мы будем рады помочь!"
+                                : "Do you want to know more about our services, or do you want to become our customer? Get in touch with us, we're happy to help!"}</p>
                             <span className="section-title-line"></span>{" "}
                         </div>
                         <div className="col-md-12 mb-5">
@@ -136,7 +132,7 @@ const MainPage = ({allLangs, lang, setLang, isRu}) => {
                                     </div>
                                     <div className="content">
                                         <h4>{isRu ? "Телефон" : "Phone"} :</h4>
-                                        <p>930085504</p>
+                                        <a href="tel:930085504">930085504</a>
                                     </div>
                                 </div>
                                 <div className="info-box">
@@ -164,7 +160,8 @@ const MainPage = ({allLangs, lang, setLang, isRu}) => {
                             </div>
                         </div>
                         <div className="col-md-8">
-                            <MyForm isru={isRu}/>
+                            <MyForm isRu={isRu}/>
+
                         </div>
                     </div>
                 </div>
