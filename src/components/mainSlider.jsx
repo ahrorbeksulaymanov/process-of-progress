@@ -21,11 +21,7 @@ export default function MainSlider({ isRu }) {
       >
         <SwiperSlide>
           <div
-            className="bg-rgba"
-            style={{
-              background:
-                "url(https://images.pexels.com/photos/844297/pexels-photo-844297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
-            }}
+            className="bg-rgba first"
           >
             <div className="banner-overlay">
               <div className="container">
@@ -45,11 +41,7 @@ export default function MainSlider({ isRu }) {
         </SwiperSlide>
         <SwiperSlide>
           <div
-            className="bg-rgba"
-            style={{
-              background:
-                "url(https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=600)",
-            }}
+            className="bg-rgba second"
           >
             <div className="banner-overlay">
             <div className="container">
@@ -69,11 +61,7 @@ export default function MainSlider({ isRu }) {
         </SwiperSlide>
         <SwiperSlide>
           <div
-            className="bg-rgba"
-            style={{
-              background:
-                "url(https://images.pexels.com/photos/1329711/pexels-photo-1329711.jpeg?auto=compress&cs=tinysrgb&w=600)",
-            }}
+            className="bg-rgba third"
           >
             <div className="banner-overlay">
             <div className="container">
