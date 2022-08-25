@@ -40,7 +40,7 @@ const Products = ({isRu}) => {
 
                         <div className="col-lg-6 mb-4 border-radius-custom col-sm-6 summer no-padding">
                             <div className="item-img">
-                                <div className="part-img"><img className="product-image" src={require('../images/productus/df-uzum-mix.jpg')}
+                                <div className="part-img"><img className="product-image" src={require('../images/productus/beans-idishlar.jpeg')}
                                                                alt="image"/>
                                     <div className="overlay-img">
                                         <h4>Summer</h4>
@@ -51,7 +51,7 @@ const Products = ({isRu}) => {
                         </div>
                         <div className="col-lg-6 mb-4 border-radius-custom col-sm-6 rainy no-padding">
                             <div className="item-img">
-                                <div className="part-img"><img className="product-image" src={require('../images/productus/urik.jpg')}
+                                <div className="part-img"><img className="product-image" src={require('../images/productus/dried-fruits.jpg')}
                                                                alt="image"/>
                                     <div className="overlay-img">
                                         <h4>Rainy</h4>
@@ -76,7 +76,7 @@ const Products = ({isRu}) => {
                                 <div className="part-img"><img className="product-image" src={require('../images/productus/beans-ishlar.jpeg')}
                                                                alt="image"/>
                                     <div className="overlay-img">
-                                        <h4>Rainy</h4>
+                                        <h4>oxirgi</h4>
                                         <h6>Girl in the Rain</h6>
                                     </div>
                                 </div>

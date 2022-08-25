@@ -82,7 +82,7 @@ const MainPage = ({allLangs, lang, setLang, isRu}) => {
                             <div className="section-img">
                                 {" "}
                                 <img
-                                    src={require("../images/about_us/gilos-2.jpg")}
+                                    src={require("../images/about_us/kollaj_1.png")}
                                     alt=""
                                 />{" "}
                             </div>
