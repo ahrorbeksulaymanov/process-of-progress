@@ -15,7 +15,7 @@ const Products = ({isRu}) => {
                         <span className="section-title-line"></span></div>
                     <div className="gallery no-padding row">
 
-                        <div className="col-lg-4 border-radius-custom col-sm-6 summer no-padding">
+                        {/* <div className="col-lg-4 border-radius-custom col-sm-6 summer no-padding">
                             <div className="item-img">
                                 <div className="part-img"><img className="product-image" src={require('../images/productus/gilos-1.jpg')}
                                                                alt="image"/>
@@ -25,7 +25,7 @@ const Products = ({isRu}) => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="col-lg-4 border-radius-custom col-sm-6 winter no-padding">
                             <div className="item-img">
                                 <div className="part-img"><img className="product-image" src={require('../images/productus/qovun.jpg')}
@@ -71,7 +71,7 @@ const Products = ({isRu}) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 border-radius-custom col-sm-6 summer no-padding">
+                        {/* <div className="col-lg-4 border-radius-custom col-sm-6 summer no-padding">
                             <div className="item-img">
                                 <div className="part-img"><img className="product-image" src={require('../images/productus/bodring-pamidor.jpg')}
                                                                alt="image"/>
@@ -81,9 +81,9 @@ const Products = ({isRu}) => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
-                        <div className="col-lg-4 border-radius-custom col-sm-6 summer no-padding">
+                        {/* <div className="col-lg-4 border-radius-custom col-sm-6 summer no-padding">
                             <div className="item-img">
                                 <div className="part-img"><img className="product-image" src={require('../images/productus/bulgor-1.png')}
                                                                alt="image"/>
@@ -93,7 +93,7 @@ const Products = ({isRu}) => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="col-lg-4 border-radius-custom col-sm-6 summer no-padding">
                             <div className="item-img">
                                 <div className="part-img"><img className="product-image" src={require('../images/productus/beans-mix.jpg')}
