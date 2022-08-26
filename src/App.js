@@ -12,11 +12,11 @@ function App() {
       title: "Rusian"
     },
     {
-      key: "En",
+      key: "en",
       title: "English"
     }
   ]
-  const [lang, setLang] = useState(localStorage.getItem("lang") || "ru")
+  const [lang, setLang] = useState(localStorage.getItem("lang") || "en")
   const [isRu, setisRu] = useState(true)
 
   useEffect(() => {

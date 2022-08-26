@@ -37,13 +37,13 @@ body {
 	margin-left: auto;
 }
 .first{
-	background-image: url(./images/productus/beans-mix.jpg);
+	background-image: url(./images/home/fields.jpg);
 }
 .second{
-	background-image: url(./images/productus/beans-ishlar.jpeg);
+	background-image: url(./images/home/home-port.jpg);
 }
 .third{
-	background-image: url(./images/productus/yongoq.jpg);
+	background-image: url(./images/home/home-market.jpg);
 }
 @media screen and (max-width: 992px){
 	.ms-auto-custom{

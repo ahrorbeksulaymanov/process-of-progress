@@ -30,10 +30,6 @@ const MainPage = ({allLangs, lang, setLang, isRu}) => {
                                 }
 
                             </h3>
-                            <p>
-                                Suspendisse fringilla eget arcu et bibendum. Vestibulum
-                                elementum dui tempus dolor gravida, vel mattis erat fermentum.
-                            </p>
                             <span className="section-title-line"></span>{" "}
                         </div>
                         <div className="col-md-6 mb-50">
@@ -57,22 +53,8 @@ const MainPage = ({allLangs, lang, setLang, isRu}) => {
 
                                     </h5>
                                     <p>
-                                        {isRu
-                                            ?
-                                            "ООО «Процесс» — международная компания по торговле орехами, семечками и сухофруктами, " +
-                                            "а также поставщик многих известных покупателей. Наши агенты по закупкам " +
-                                            "по всему миру находятся в ежедневном контакте с поставщиками, " +
-                                            "чтобы гарантировать качество и контрактные количества. " +
-                                            "Отдел логистики организует чистое и быстрое складирование и транспортировку, " +
-                                            "а трейдеры Process International всегда к вашим услугам для получения информации и совета."
-                                            :
-                                            "Process LLC is a worldwide operating trading company in nuts" +
-                                            "seeds and dried fruit and a supplier to many well known buyers." +
-                                            "Our purchasing agents around the world are in daily contact with" +
-                                            "suppliers to ensure quality and contracted quantities." +
-                                            "The logistics department arranges clean and fast warehousing and" +
-                                            "transportation and the Process International traders are" +
-                                            "always at your service for information and advice."
+                                        {isRu ? "ООО «Процесс» — международная торговая компания по продаже орехов, бобовых и сухофруктов, а также поставщик многих известных покупателей. Мы новая компания с большим опытом в области экспорта сельскохозяйственной продукции. В частности, руководитель компании г-н Хусан Хайдаров одновременно является председателем Ассоциации экспортеров овощей и фруктов Узбекистана, а также почетным консультантом проекта ShirinMeva, финансируемого ЕС и Всемирным банком. Наши агенты по закупкам находятся в ежедневном контакте с поставщиками, чтобы гарантировать качество и контрактные количества. Отдел логистики организует чистое и быстрое складирование и транспортировку, а международные трейдеры Process всегда к вашим услугам для получения информации и совета."
+                                            : "Process LLC is a worldwide operating trading company in nuts, pulses and dried fruit and a supplier to many well known buyers.  We are a new established company with the big experience in the field of exporting agricultural products. Specifically, the head of the company Mr. Husan Haydarov is at the same time a Chairman of the Association of Vegetables and Fruits Exporters of Uzbekistan and also he is an honorable consultant of ShirinMeva project funded by EU and World Bank.  Our purchasing agents are in daily contact with suppliers to ensure quality and contracted quantities. The logistics department arranges clean and fast warehousing and transportation and the Process International traders are always at your service for information and advice."
                                         }
                                     </p>
                                 </div>
@@ -82,7 +64,7 @@ const MainPage = ({allLangs, lang, setLang, isRu}) => {
                             <div className="section-img">
                                 {" "}
                                 <img
-                                    src={require("../images/about_us/gilos-2.jpg")}
+                                    src={require("../images/about_us/kollaj_1.png")}
                                     alt=""
                                 />{" "}
                             </div>
@@ -114,8 +96,8 @@ const MainPage = ({allLangs, lang, setLang, isRu}) => {
                     <div className="row">
                         <div className="col-md-12 section-title text-center">
                             <h3>{isRu ? "Связаться!" : "Get in touch!"}</h3>
-                            <p>{isRu ? "Хотите узнать больше о наших услугах или хотите стать нашим клиентом? Свяжитесь с нами, мы будем рады помочь!"
-                                : "Want to know more about our services, or do you want to become a customer? Get in touch with us, we're happy to help!"}</p>
+                            <p>{isRu ? "Хотите узнать больше о наших услугах или стать нашим клиентом? Свяжитесь с нами, мы будем рады помочь!"
+                                : "Do you want to know more about our services, or do you want to become our customer? Get in touch with us, we're happy to help!"}</p>
                             <span className="section-title-line"></span>{" "}
                         </div>
                         <div className="col-md-12 mb-5">
@@ -136,7 +118,7 @@ const MainPage = ({allLangs, lang, setLang, isRu}) => {
                                     </div>
                                     <div className="content">
                                         <h4>{isRu ? "Телефон" : "Phone"} :</h4>
-                                        <p>930085504</p>
+                                        <a href="tel:930085504">930085504</a>
                                     </div>
                                 </div>
                                 <div className="info-box">
@@ -164,7 +146,8 @@ const MainPage = ({allLangs, lang, setLang, isRu}) => {
                             </div>
                         </div>
                         <div className="col-md-8">
-                            <MyForm isru={isRu}/>
+                            <MyForm isRu={isRu}/>
+
                         </div>
                     </div>
                 </div>
