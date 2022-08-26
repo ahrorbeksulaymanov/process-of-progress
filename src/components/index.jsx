@@ -118,7 +118,7 @@ const MainPage = ({allLangs, lang, setLang, isRu}) => {
                                     </div>
                                     <div className="content">
                                         <h4>{isRu ? "Телефон" : "Phone"} :</h4>
-                                        <a href="tel:930085504">930085504</a>
+                                        <a href="tel:+998 90 946 33 35">+998 90 946 33 35</a>
                                     </div>
                                 </div>
                                 <div className="info-box">
@@ -139,7 +139,10 @@ const MainPage = ({allLangs, lang, setLang, isRu}) => {
                                     <div className="content">
                                         <h4>{isRu ? "Почта" : "Mail"} :</h4>
                                         <p>
-                                            <a href="mailto:husanht@gmail.com">husanht@gmail.com</a>
+                                            <a href="mailto:info@theprocess.uz">info@theprocess.uz</a>
+                                        </p>
+                                        <p>
+                                            <a href="mailto:export@theprocess.uz">export@theprocess.uz</a>
                                         </p>
                                     </div>
                                 </div>
