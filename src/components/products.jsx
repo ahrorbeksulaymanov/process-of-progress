@@ -14,7 +14,6 @@ const Products = ({isRu}) => {
                         <p>{isRu ? "Всё что вам нужно!" : "Anything you need!"}</p>
                         <span className="section-title-line"></span>
                     </div>
-                    {/* <div className=" row"> */}
                         <div className="col-lg-6 mb-4 border-radius-custom col-sm-6 winter no-padding">
                             <div className="item-img">
                                 <div className="part-img"><img className="product-image" src={require('../images/productus/qovun.jpg')}
@@ -60,29 +59,6 @@ const Products = ({isRu}) => {
                                 </div>
                             </div>
                         </div>
-                        {/* <div className="col-lg-6 mb-4 border-radius-custom col-sm-6 summer no-padding">
-                            <div className="item-img">
-                                <div className="part-img"><img className="product-image" src={require('../images/productus/beans-mix.jpg')}
-                                                               alt="image"/>
-                                    <div className="overlay-img">
-                                        <h4>Summer</h4>
-                                        <h6>New Beginning</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 mb-4 border-radius-custom col-sm-6 rainy no-padding">
-                            <div className="item-img">
-                                <div className="part-img"><img className="product-image" src={require('../images/productus/beans-ishlar.jpeg')}
-                                                               alt="image"/>
-                                    <div className="overlay-img">
-                                        <h4>Rainy</h4>
-                                        <h6>Girl in the Rain</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
-                    {/* </div> */}
                 </div>
             </div>
         </div>

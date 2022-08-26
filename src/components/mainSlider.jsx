@@ -27,13 +27,13 @@ export default function MainSlider({ isRu }) {
               <div className="container">
                 <h1 className="text-capitalize">
                   {isRu
-                    ? "Мы работаем по всему миру"
-                    : "We work worldwide"}
+                    ? "МЫ РАБОТАЕМ ПО ВСЕМУ МИРУ"
+                    : "WE WORK WORLDWIDE"}
                 </h1>
                 <p>
                   {isRu
-                    ? "Работает по всему миру торговая компания в орехи, семечки и сухофрукты"
-                    : "Worldwide operating trading company in nuts, seeds and dried fruit"}
+                    ? "Торговая компания по экспорту орехов, бобовых и сухофруктов из Узбекистана"
+                    : "Trading company in nuts, pulses and dried fruit from Uzbekistan"}
                 </p>
               </div>
             </div>
@@ -45,15 +45,15 @@ export default function MainSlider({ isRu }) {
           >
             <div className="banner-overlay">
             <div className="container">
-                <h1 className="text-capitalize">
+            <h1 className="text-capitalize">
                   {isRu
-                    ? "Мы работаем по всему миру"
-                    : "We work worldwide"}
+                    ? "МЫ РАБОТАЕМ ПО ВСЕМУ МИРУ"
+                    : "WE WORK WORLDWIDE"}
                 </h1>
                 <p>
                   {isRu
-                    ? "Работает по всему миру торговая компания в орехи, семечки и сухофрукты"
-                    : "Worldwide operating trading company in nuts, seeds and dried fruit"}
+                    ? "Торговая компания по экспорту орехов, бобовых и сухофруктов из Узбекистана"
+                    : "Trading company in nuts, pulses and dried fruit from Uzbekistan"}
                 </p>
               </div>
             </div>
@@ -65,15 +65,15 @@ export default function MainSlider({ isRu }) {
           >
             <div className="banner-overlay">
             <div className="container">
-                <h1 className="text-capitalize">
+            <h1 className="text-capitalize">
                   {isRu
-                    ? "Мы работаем по всему миру"
-                    : "We work worldwide"}
+                    ? "МЫ РАБОТАЕМ ПО ВСЕМУ МИРУ"
+                    : "WE WORK WORLDWIDE"}
                 </h1>
                 <p>
                   {isRu
-                    ? "Работает по всему миру торговая компания в орехи, семечки и сухофрукты"
-                    : "Worldwide operating trading company in nuts, seeds and dried fruit"}
+                    ? "Торговая компания по экспорту орехов, бобовых и сухофруктов из Узбекистана"
+                    : "Trading company in nuts, pulses and dried fruit from Uzbekistan"}
                 </p>
               </div>
             </div>
