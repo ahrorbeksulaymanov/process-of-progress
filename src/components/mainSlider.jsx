@@ -73,7 +73,7 @@ export default function MainSlider({isRu}) {
                                 <p>
                                     {isRu
                                         ? "Торговая компания по экспорту орехов, бобовых и сухофруктов из Узбекистана"
-                                        : "Trading company in nuts, pulses and dried fruits from Uzbekistan"}
+                                        : "Trading company in dried fruits, nuts and pulses from Uzbekistan"}
                                 </p>
                             </div>
                         </div>

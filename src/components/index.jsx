@@ -35,14 +35,14 @@ const MainPage = ({allLangs, lang, setLang, isRu}) => {
                         <div className="col-md-6 mb-50">
                             <div className="section-info">
                                 <div className="sub-title-paragraph">
-                                    <h4>
-                                        {isRu
-                                            ?
-                                            "Вы можете завоевать мир."
-                                            :
-                                            "You can conquer the world."
-                                        }
-                                    </h4>
+                                    {/*<h4>*/}
+                                    {/*    {isRu*/}
+                                    {/*        ?*/}
+                                    {/*        "Вы можете завоевать мир."*/}
+                                    {/*        :*/}
+                                    {/*        "You can conquer the world."*/}
+                                    {/*    }*/}
+                                    {/*</h4>*/}
                                     <h5>
                                         {isRu
                                             ?
