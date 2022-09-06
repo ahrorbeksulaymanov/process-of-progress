@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import {Collapse, Nav, Navbar, NavbarBrand, NavbarToggler,} from "reactstrap";
 import useScrollTop from "../customHooks/useScroll";
-import logo from "../images/home/PROCESS_new.svg";
-import logo_1 from "../images/home/PROCESS_background_white.svg";
+import logo from "../images/home/PROCESS_new.png";
+import logo_1 from "../images/home/PROCESS_new_1.png";
 import {FaBars} from "react-icons/fa";
 
 const MyHeader = ({isRu, allLangs, lang, setLang}) => {
