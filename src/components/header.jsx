@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Collapse, Nav, Navbar, NavbarBrand, NavbarToggler,} from "reactstrap";
 import useScrollTop from "../customHooks/useScroll";
-import logo from "../images/home/PROCESS.svg";
+import logo from "../images/home/PROCESS_new.svg";
 import logo_1 from "../images/home/PROCESS_background_white.svg";
 import {FaBars} from "react-icons/fa";
 

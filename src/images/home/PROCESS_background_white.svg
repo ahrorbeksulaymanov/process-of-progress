@@ -3,11 +3,11 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1223.28 457" style="enable-background:new 0 0 1223.28 457;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#2B4B9B;}
+	.st0{fill:#312783;}
 	.st1{fill:#020203;}
 	.st2{fill:#FFFFFF;}
 	.st3{font-family:'ArialRoundedMTBold';}
-	.st4{font-size:214px;}
+	.st4{font-size:193px;}
 	.st5{letter-spacing:8.13;}
 </style>
 <g id="Слой_2">
@@ -29,6 +29,6 @@
 		c-3.49-0.11-6.66,2.23-8.13,4.76c0,0-1,1.71-1.76,8.64c0,0-4.85-0.03-14.11-0.1C602.71,385.69,602.84,382.58,602.97,379.47z"/>
 </g>
 <g id="Слой_3">
-	<text transform="matrix(0.9836 0 0 1 80.9838 291.6271)" class="st2 st3 st4 st5">PROCESS</text>
+    <text transform="matrix(0.9836 0 0 1 80.9838 291.6271)"> <tspan x="150" y="0" class="st2 st3 st4 st5">PROCESS</tspan></text>
 </g>
 </svg>
