@@ -28,12 +28,12 @@ export default function MainSlider({ isRu }) {
                 <h1 className="text-capitalize">
                   {isRu
                     ? "МЫ РАБОТАЕМ ПО ВСЕМУ МИРУ"
-                    : "WE WORK WORLDWIDE"}
+                    : "We trade internationally"}
                 </h1>
                 <p>
                   {isRu
                     ? "Торговая компания по экспорту орехов, бобовых и сухофруктов из Узбекистана"
-                    : "Trading company in nuts, pulses and dried fruit from Uzbekistan"}
+                    : "Trading company in nuts, pulses and dried fruits from Uzbekistan"}
                 </p>
               </div>
             </div>
@@ -48,12 +48,12 @@ export default function MainSlider({ isRu }) {
             <h1 className="text-capitalize">
                   {isRu
                     ? "МЫ РАБОТАЕМ ПО ВСЕМУ МИРУ"
-                    : "WE WORK WORLDWIDE"}
+                    : "We trade internationally"}
                 </h1>
                 <p>
                   {isRu
                     ? "Торговая компания по экспорту орехов, бобовых и сухофруктов из Узбекистана"
-                    : "Trading company in nuts, pulses and dried fruit from Uzbekistan"}
+                    : "Trading company in nuts, pulses and dried fruits from Uzbekistan"}
                 </p>
               </div>
             </div>
@@ -68,12 +68,12 @@ export default function MainSlider({ isRu }) {
             <h1 className="text-capitalize">
                   {isRu
                     ? "МЫ РАБОТАЕМ ПО ВСЕМУ МИРУ"
-                    : "WE WORK WORLDWIDE"}
+                    : "We trade internationally"}
                 </h1>
                 <p>
                   {isRu
                     ? "Торговая компания по экспорту орехов, бобовых и сухофруктов из Узбекистана"
-                    : "Trading company in nuts, pulses and dried fruit from Uzbekistan"}
+                    : "Trading company in nuts, pulses and dried fruits from Uzbekistan"}
                 </p>
               </div>
             </div>
