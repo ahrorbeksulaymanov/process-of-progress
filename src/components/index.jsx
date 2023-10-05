@@ -26,7 +26,7 @@ const MainPage = ({allLangs, lang, setLang, isRu}) => {
                                     ?
                                     "МЫ ЛУЧШИЕ В СВОЕЙ РАБОТЕ"
                                     :
-                                    "The Process is your Success and your Progress!"
+                                    "PROCESS IN SEARCH OF PROGRESS!"
                                 }
 
                             </h3>
